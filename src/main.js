@@ -74,7 +74,7 @@ async function onClick() {
       });
     }
   } catch (error) {
-    console.log(error);
+    console.error(`Error`, error);
   } finally {
     hideLoader();
   }
