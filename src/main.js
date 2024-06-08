@@ -43,7 +43,7 @@ async function onSubmit(event) {
       showBtn();
     }
   } catch (error) {
-    console.log(error);
+    console.error(`Error`, error);
   } finally {
     hideLoader();
     event.target.reset();
