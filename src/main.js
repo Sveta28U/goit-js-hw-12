@@ -43,7 +43,11 @@ async function onSubmit(event) {
       showBtn();
     }
   } catch (error) {
-    console.error(`Error`, error);
+    iziToast.error({
+      title: `Error`,
+      message:
+        'Sorry, an error occurred while fetching the images. Please try again later.',
+    });
   } finally {
     hideLoader();
     event.target.reset();
@@ -74,7 +78,11 @@ async function onClick() {
       });
     }
   } catch (error) {
-    console.error(`Error`, error);
+    iziToast.error({
+      title: `Error`,
+      message:
+        'Sorry, an error occurred while fetching the images. Please try again later.',
+    });
   } finally {
     hideLoader();
   }
